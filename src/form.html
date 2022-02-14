@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>
         Projeto Exemplo
     </title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/list.css" />
+    <link rel="stylesheet" href="../assets/css/forms.css" />
 </head>
 <body>
     <header class="cabecalho">
@@ -16,25 +18,31 @@
         <a href="./form.html" > Cadastrar </a>
     </section>
     <section>
-        
+        <form class="formulario">
+            <div class="linha-formulario">
+                <label class="label-grande" for="name"> Nome: </label>
+                <input name="name" id="name" required type="text" placeholder="Nome do Aluno" />
+            </div>
+            <div class="linha-formulario">
+                <label class="label-grande" for="phone"> Telefone: </label>
+                <input name="phone" id="phone" required type="text" placeholder="Telefone" />
+            </div class="">
+            <div class="linha-formulario" style="display: flex;">
+                <label class="label-grande"> Experiência Prévia: </label>
+                <div style="display: inline-block; width: 40%;">
+                    <input name="xp" id="xp-yes" required type="radio" placeholder="Telefone" /> <label for="xp-yes">Sim</label>
+                    <br />
+                    <input name="xp" id="xp-no" required type="radio" placeholder="Telefone" /> <label for="xp-no">Não</label>
+                </div>
+            </div>
+            <div>
+                <div class="linha formulario">
+                    <input type="submit" value="Salvar" />
+                </div>
+                
+            </div>
+        </form>
     </section>
-    <table class="lista">
-        <tbody>
-          <tr>
-              <td>
-                  Alexandre Ribeiro
-              </td>
-              <td>
-                +55 (21) 99571-1582
-            </td>
-            <td>
-                Sim
-            </td>
-            <td>
-                <button> Alterar </button>
-            </td>
-          </tr>  
-        </tbody>
-    </table>
+    
 </body>
 </html>
